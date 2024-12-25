@@ -1,50 +1,43 @@
-/* Reset & Body Styling */
+/* Global Styles */
 body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #000; /* Latar belakang tema gelap */
+    color: #e1e8ed;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Warna tema gelap */
-    font-family: "Segoe UI", Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #e7e9ea; /* Warna teks utama */
 }
 
-/* Twitter X Post Container */
-.twitter-x-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Container utama */
+.twitter-container {
     width: 100%;
     max-width: 600px;
+    background: #15202b;
+    border: 1px solid #38444d;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-/* Twitter X Post Styling */
-.twitter-x-post {
-    width: 100%;
-    background: #16181c; /* Abu-abu gelap khas tema Twitter */
-    border: 1px solid #2f3336;
-    border-radius: 16px;
-    padding: 16px 20px;
-    box-sizing: border-box;
-    color: #e7e9ea;
+/* Post */
+.twitter-post {
+    padding: 15px;
 }
 
-/* Post Header */
+/* Header */
 .post-header {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .profile-pic {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    margin-right: 12px;
-    object-fit: cover;
-    background-color: #ccd6dd;
+    margin-right: 10px;
 }
 
 .user-info {
@@ -55,60 +48,63 @@ body {
 .name-wrapper {
     display: flex;
     align-items: center;
+    font-size: 16px;
 }
 
 .name {
     font-weight: bold;
-    color: #e7e9ea;
+    color: #ffffff;
     margin-right: 5px;
 }
 
 .verified {
-    color: #1d9bf0; /* Warna biru khas Twitter */
-    font-size: 16px;
+    color: #1da1f2;
+    font-size: 14px;
 }
 
-.username,
-.time,
-.dot {
+.details {
     font-size: 14px;
-    color: #71767b; /* Abu-abu untuk teks sekunder */
+    color: #8899a6;
 }
 
 .dot {
     margin: 0 5px;
 }
 
-/* Post Content */
-.post-content {
+/* Konten Post */
+.post-content p {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 12px;
-    word-wrap: break-word;
-    color: #e7e9ea;
+    margin: 0 0 10px;
+    color: #e1e8ed;
 }
 
-/* Post Footer */
+/* Footer */
 .post-footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
-    color: #71767b;
+    border-top: 1px solid #38444d;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .footer-item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    color: #8899a6;
+    font-size: 14px;
     cursor: pointer;
-    transition: color 0.2s ease-in-out;
-}
-
-.footer-item i {
-    font-size: 18px;
 }
 
 .footer-item:hover {
-    color: #1d9bf0; /* Efek hover biru */
-    }
+    color: #1da1f2;
+}
+
+.footer-item i {
+    margin-right: 5px;
+}
+
+/* Hover untuk efek lebih realistis */
+.footer-item:hover span {
+    text-decoration: underline;
+}
