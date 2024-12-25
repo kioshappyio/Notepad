@@ -11,34 +11,34 @@
     <div class="twitter-container">
         <div class="twitter-post">
             <div class="post-header">
-                <img src="https://kioshappyio.github.io/story/profil.png" alt="Profile Picture" class="profile-pic">
+                <img id="profile-pic" src="https://kioshappyio.github.io/story/profil.png" alt="Profile Picture" class="profile-pic">
                 <div class="user-info">
                     <div class="name-wrapper">
-                        <span class="name">A Shoulder to Cry On</span>
+                        <span id="name" class="name">A Shoulder to Cry On</span>
                         <i class="fa-solid fa-circle-check verified"></i>
                     </div>
                     <div class="details">
-                        <span class="username">@AShoulderStory</span>
+                        <span id="username" class="username">@AShoulderStory</span>
                         <span class="dot">·</span>
-                        <span class="time">7 Des</span>
+                        <span id="time" class="time">25 Des</span>
                     </div>
                 </div>
             </div>
             <div class="post-content">
-                <p>"Doa itu bukan last option, tapi first action."</p>
+                <p id="post-text">"Sujud adalah tempat terdekat seorang hamba dengan Tuhannya. Perbanyaklah sujudmu agar dekat pula hatimu dengan-Nya."</p>
             </div>
             <div class="post-footer">
                 <div class="footer-item">
                     <i class="fa-regular fa-comment"></i>
-                    <span>34K</span>
+                    <span id="comments">7K</span>
                 </div>
                 <div class="footer-item">
                     <i class="fa-solid fa-retweet"></i>
-                    <span>184K</span>
+                    <span id="retweets">17K</span>
                 </div>
                 <div class="footer-item">
                     <i class="fa-regular fa-heart"></i>
-                    <span>97k</span>
+                    <span id="likes">24K</span>
                 </div>
                 <div class="footer-item">
                     <i class="fa-solid fa-share"></i>
@@ -46,5 +46,39 @@
             </div>
         </div>
     </div>
+
+    <!-- Form untuk mengubah data -->
+    <div class="edit-form" id="edit-form">
+        <h2>Edit Post</h2>
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" value="A Shoulder to Cry On">
+        
+        <label for="username-input">Username:</label>
+        <input type="text" id="username-input" value="@AShoulderStory">
+        
+        <label for="time-input">Time:</label>
+        <input type="text" id="time-input" value="25 Des">
+        
+        <label for="text-input">Text:</label>
+        <textarea id="text-input" rows="3">"Sujud adalah tempat terdekat seorang hamba dengan Tuhannya. Perbanyaklah sujudmu agar dekat pula hatimu dengan-Nya."</textarea>
+        
+        <label for="profile-pic-input">Profile Picture URL:</label>
+        <input type="text" id="profile-pic-input" value="https://kioshappyio.github.io/story/profil.png">
+        
+        <label for="comments-input">Comments:</label>
+        <input type="number" id="comments-input" value="7000">
+        
+        <label for="retweets-input">Retweets:</label>
+        <input type="number" id="retweets-input" value="17000">
+        
+        <label for="likes-input">Likes:</label>
+        <input type="number" id="likes-input" value="24000">
+        
+        <button onclick="updatePost()">Update Post</button>
+        <button onclick="resetPost()">Reset Post</button>
+        <button onclick="toggleForm()">Minimize Form</button>
+    </div>
+
+    <script src="https://kioshappyio.github.io/story/script.js"></script>
 </body>
-</html>
+                                                       </html>
