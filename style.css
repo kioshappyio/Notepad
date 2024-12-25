@@ -1,13 +1,14 @@
 /* Global Styles */
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #000; /* Latar belakang tema gelap */
+    background-color: #000;
     color: #e1e8ed;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
 }
 
@@ -104,7 +105,96 @@ body {
     margin-right: 5px;
 }
 
-/* Hover untuk efek lebih realistis */
-.footer-item:hover span {
-    text-decoration: underline;
+/* Form Edit */
+.edit-form {
+    width: 100%;
+    max-width: 600px;
+    background: #192734;
+    border: 1px solid #38444d;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 20px;
+    color: #e1e8ed;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+}
+
+.edit-form h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #8899a6;
+}
+
+.edit-form input, .edit-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #38444d;
+    border-radius: 5px;
+    background: #15202b;
+    color: #e1e8ed;
+    font-size: 14px;
+}
+
+.edit-form button {
+    padding: 10px 20px;
+    background: #1da1f2;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-form button:hover {
+    background: #0d8cd8;
+}
+
+/* Minimized Form */
+.minimized {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+/* Styling tombol pada form */
+.edit-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #1da1f2;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Hapus margin bawah pada tombol terakhir */
+.edit-form button:last-child {
+    margin-bottom: 0;
+}
+
+/* Flex container untuk tombol */
+.edit-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.edit-form button {
+    flex: 1 1 calc(33.33% - 10px); /* Atur 3 kolom */
+}
+
+@media (max-width: 768px) {
+    .edit-form button {
+        flex: 1 1 100%; /* Atur 1 kolom untuk layar kecil */
+    }
 }
