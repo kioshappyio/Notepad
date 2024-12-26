@@ -15,18 +15,17 @@ body {
 /* Container utama */
 .twitter-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px; /* Mengecilkan ukuran maksimal */
     background: #15202b;
     border: 1px solid #38444d;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 0; /* Menghapus padding di kontainer utama */
 }
 
 /* Post */
 .twitter-post {
-    padding: 15px 20px; /* Padding horizontal lebih besar */
+    padding: 12px 15px; /* Padding proporsional */
     display: flex;
     flex-direction: column;
 }
@@ -35,12 +34,12 @@ body {
 .post-header {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Jarak lebih kecil */
 }
 
 .profile-pic {
-    width: 48px;
-    height: 48px;
+    width: 40px; /* Mengecilkan ukuran gambar profil */
+    height: 40px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -48,13 +47,13 @@ body {
 .user-info {
     display: flex;
     flex-direction: column;
-    gap: 2px; /* Jarak antar teks */
+    gap: 2px;
 }
 
 .name-wrapper {
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px; /* Mengecilkan font */
 }
 
 .name {
@@ -65,43 +64,43 @@ body {
 
 .verified {
     color: #1da1f2;
-    font-size: 14px;
+    font-size: 12px; /* Mengecilkan ikon verified */
 }
 
 .details {
-    font-size: 14px;
+    font-size: 12px; /* Mengecilkan detail waktu */
     color: #8899a6;
 }
 
 .dot {
-    margin: 0 5px;
+    margin: 0 3px; /* Jarak lebih kecil */
 }
 
 /* Konten Post */
 .post-content p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 10px 0;
+    font-size: 14px; /* Mengecilkan teks konten */
+    line-height: 1.4;
+    margin: 8px 0;
     color: #e1e8ed;
-    word-wrap: break-word; /* Memastikan teks panjang tidak keluar */
+    word-wrap: break-word;
 }
 
 /* Footer */
 .post-footer {
     display: flex;
-    justify-content: space-around; /* Rata elemen di footer */
+    justify-content: space-around;
     border-top: 1px solid #38444d;
-    padding-top: 10px;
-    margin-top: 10px;
+    padding-top: 8px; /* Padding lebih kecil */
+    margin-top: 8px;
 }
 
 .footer-item {
     display: flex;
     align-items: center;
     color: #8899a6;
-    font-size: 14px;
+    font-size: 12px; /* Font lebih kecil */
     cursor: pointer;
-    gap: 5px;
+    gap: 4px;
 }
 
 .footer-item:hover {
@@ -109,17 +108,17 @@ body {
 }
 
 .footer-item i {
-    font-size: 18px;
+    font-size: 16px; /* Ikon lebih kecil */
 }
 
 /* Form Edit */
 .edit-form {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px; /* Sesuai dengan post */
     background: #192734;
     border: 1px solid #38444d;
     border-radius: 15px;
-    padding: 15px;
+    padding: 10px;
     margin-top: 20px;
     color: #e1e8ed;
     transition: max-height 0.3s ease;
@@ -128,39 +127,39 @@ body {
 
 .edit-form h2 {
     margin: 0 0 10px;
-    font-size: 18px;
+    font-size: 16px; /* Font lebih kecil */
     color: #ffffff;
 }
 
 .edit-form label {
     display: block;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 12px; /* Font label lebih kecil */
     color: #8899a6;
 }
 
 .edit-form input, .edit-form textarea {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    padding: 6px; /* Padding lebih kecil */
+    margin-bottom: 8px;
     border: 1px solid #38444d;
     border-radius: 5px;
     background: #15202b;
     color: #e1e8ed;
-    font-size: 14px;
+    font-size: 12px; /* Font lebih kecil */
 }
 
 /* Tombol dalam Form */
 .edit-form button {
-    padding: 10px;
+    padding: 8px;
     background: #1da1f2;
     border: none;
     border-radius: 5px;
     color: #ffffff;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .edit-form button:last-child {
@@ -175,11 +174,11 @@ body {
 .edit-form {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px; /* Jarak antar tombol lebih kecil */
 }
 
 .edit-form button {
-    flex: 1 1 calc(33.33% - 10px); /* Tombol 3 kolom */
+    flex: 1 1 calc(33.33% - 8px); /* Tombol 3 kolom */
 }
 
 @media (max-width: 768px) {
@@ -193,4 +192,4 @@ body {
     max-height: 0;
     padding: 0;
     overflow: hidden;
-}
+    }
