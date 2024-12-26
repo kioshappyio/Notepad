@@ -20,16 +20,15 @@ body {
     border: 1px solid #38444d;
     border-radius: 15px;
     overflow: hidden;
-    padding: 15px; /* Tambahan padding */
-    box-sizing: border-box; /* Pastikan padding dihitung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0; /* Menghapus padding di kontainer utama */
 }
 
 /* Post */
 .twitter-post {
-    padding: 20px;
-    background: #192734;
-    border-radius: 10px;
-    overflow: hidden; /* Cegah elemen keluar */
+    padding: 15px 20px; /* Padding horizontal lebih besar */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -49,6 +48,7 @@ body {
 .user-info {
     display: flex;
     flex-direction: column;
+    gap: 2px; /* Jarak antar teks */
 }
 
 .name-wrapper {
@@ -81,7 +81,7 @@ body {
 .post-content p {
     font-size: 16px;
     line-height: 1.5;
-    margin: 0 0 10px;
+    margin: 10px 0;
     color: #e1e8ed;
     word-wrap: break-word; /* Memastikan teks panjang tidak keluar */
 }
@@ -89,7 +89,7 @@ body {
 /* Footer */
 .post-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; /* Rata elemen di footer */
     border-top: 1px solid #38444d;
     padding-top: 10px;
     margin-top: 10px;
@@ -101,6 +101,7 @@ body {
     color: #8899a6;
     font-size: 14px;
     cursor: pointer;
+    gap: 5px;
 }
 
 .footer-item:hover {
@@ -108,7 +109,7 @@ body {
 }
 
 .footer-item i {
-    margin-right: 5px;
+    font-size: 18px;
 }
 
 /* Form Edit */
@@ -192,4 +193,4 @@ body {
     max-height: 0;
     padding: 0;
     overflow: hidden;
-    }
+}
