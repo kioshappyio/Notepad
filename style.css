@@ -20,11 +20,16 @@ body {
     border: 1px solid #38444d;
     border-radius: 15px;
     overflow: hidden;
+    padding: 15px; /* Tambahan padding */
+    box-sizing: border-box; /* Pastikan padding dihitung */
 }
 
 /* Post */
 .twitter-post {
-    padding: 15px;
+    padding: 20px;
+    background: #192734;
+    border-radius: 10px;
+    overflow: hidden; /* Cegah elemen keluar */
 }
 
 /* Header */
@@ -78,6 +83,7 @@ body {
     line-height: 1.5;
     margin: 0 0 10px;
     color: #e1e8ed;
+    word-wrap: break-word; /* Memastikan teks panjang tidak keluar */
 }
 
 /* Footer */
@@ -143,43 +149,25 @@ body {
     font-size: 14px;
 }
 
+/* Tombol dalam Form */
 .edit-form button {
-    padding: 10px 20px;
+    padding: 10px;
     background: #1da1f2;
     border: none;
     border-radius: 5px;
     color: #ffffff;
     cursor: pointer;
     font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.edit-form button:last-child {
+    margin-bottom: 0;
 }
 
 .edit-form button:hover {
     background: #0d8cd8;
-}
-
-/* Minimized Form */
-.minimized {
-    max-height: 0;
-    padding: 0;
-    overflow: hidden;
-    }
-
-/* Styling tombol pada form */
-.edit-form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #1da1f2;
-    border: none;
-    border-radius: 5px;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-/* Hapus margin bawah pada tombol terakhir */
-.edit-form button:last-child {
-    margin-bottom: 0;
 }
 
 /* Flex container untuk tombol */
@@ -190,11 +178,18 @@ body {
 }
 
 .edit-form button {
-    flex: 1 1 calc(33.33% - 10px); /* Atur 3 kolom */
+    flex: 1 1 calc(33.33% - 10px); /* Tombol 3 kolom */
 }
 
 @media (max-width: 768px) {
     .edit-form button {
-        flex: 1 1 100%; /* Atur 1 kolom untuk layar kecil */
+        flex: 1 1 100%; /* Tombol 1 kolom untuk layar kecil */
     }
 }
+
+/* Minimized Form */
+.minimized {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    }
